@@ -90,7 +90,7 @@ img {
  */
 
  .container {
-    max-width:500px;
+    max-width:450px;
     border: solid green 1px;
     background-color:Aquamarine;
  }
@@ -106,9 +106,19 @@ img {
     max-width: 100%;
     top:0;
     left:0;
-    margin: 10px 20px 20px 10px;
-    padding: 10px 20px 20px 10px;
+   /* margin: 10px 20px 20px 10px;*/
+    padding: 5% 5% 5% 5%;
 }
+
+.clr{
+max-width:23%;
+}
+
+.calc-display{
+max-width: 73%;
+
+}
+
 .user-inputs{
     display:flex;
     flex-wrap: wrap;
@@ -118,11 +128,12 @@ img {
 .input{
     border: solid green 1px;
     max-width: 3%;
-    margin: 5% 5%;
-    padding: 5% 8% 5% 5%;
+    /*margin: 5% 5%;*/
+    padding: 9% 14% 7% 10%;
 }
 
 .input:hover{
+    background-color: gray;
     color:black;
 }
 
