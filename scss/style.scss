@@ -88,3 +88,50 @@ img {
 /**
  * YOUR CODE HERE
  */
+
+ .container {
+    max-width:500px;
+    border: solid green 1px;
+    background-color:Aquamarine;
+ }
+.calculator {
+    color:green;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+.top-row{
+    display:inline-block;
+    border: solid green 1px;
+    max-width: 100%;
+    top:0;
+    left:0;
+    margin: 10px 20px 20px 10px;
+    padding: 10px 20px 20px 10px;
+}
+.user-inputs{
+    display:flex;
+    flex-wrap: wrap;
+    border: solid green 1px;
+    flex-direction: row;
+}
+.input{
+    border: solid green 1px;
+    max-width: 3%;
+    margin: 5% 5%;
+    padding: 5% 8% 5% 5%;
+}
+
+.input:hover{
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
