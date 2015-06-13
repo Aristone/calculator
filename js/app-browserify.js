@@ -1,32 +1,45 @@
 "use strict";
 
-// // es5 polyfills, powered by es5-shim
- require("es5-shim")
-// // es6 polyfills, powered by babel
- require("babel/register")
 
-// var Promise = require('es6-promise').Promise
-// // just Node?
-// // var fetch = require('node-fetch')
-// // Browserify?
- require('whatwg-fetch') //--> not a typo, don't store as a var
+require("es5-shim")
 
-// // other stuff that we don't really use in our own code
-// // var Pace = require("../bower_components/pace/pace.js")
+require("babel/register")
+
+var Promise = require('es6-promise').Promise
+
+var backbone = require("backbone")
+
 var $ = require("jquery")
-// // require your own libraries, too!
 
- // var Backbone = require("backbone")
- // var Router = require('./app.js')
-
-// window.addEventListener('load', app)
-
-$( ".input.hidden" ).slideDown( 600 );
+import * as templates from "./templates.js"
 
 
+var CalculatorView = backbone.View.extend({
+    
+    el: '.container',
+    events: {
+        'click .nums': 'append_to_console',
+        'click .clear': 'clear_screen',
+        'click .evaluate': 'evaluate_input'
+    },
+    
+    append_to_console: function(evt) {
+        console.log(evt)
+        this.el.querySelector('.console span').innerText += evt.currentTarget.innerText
+    },
+    
+    clear_screen: function(){
+        this.el.querySelector('.console span').innerText = ''
+    },
+    
+    evaluate_input: function() {
+        this.el.querySelector('.console span').innerText = eval(this.el.querySelector('.console').innerText)
+    },
+    
+    initialize: function() {
+        this.el.innerHTML = templates.calcHTML
+    }
 
-// function app() {
-    // start app
-    // new Router()
-// }
+})
 
+window.displayCalc = new CalculatorView()
