@@ -90,6 +90,7 @@ img {
  */
 
  .container {
+    display: flex-box;
     max-width:500px;
     height: 600px;
     border: solid green 1px;
@@ -103,7 +104,7 @@ img {
     justify-content:flex-start;
     width:34px;
     border: solid green 1px;
-    padding: 10% 10% 5% 5%;
+    padding: 5% 5% 5% 5%;
      color:green;
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
@@ -116,7 +117,8 @@ img {
     border: solid green 1px;
     top:0;
     right:0;
-    padding: 10% 10% 10% 10%;
+    margin:20px 20px 20px 20px;
+    padding: 5% 5% 5% 5%;
      color:green;
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
@@ -138,7 +140,7 @@ img {
 
 }
 
-.nums{
+.keys{
     max-width: 23%;
     border: solid green 1px;
     margin: 1% 1% 1% 1%;
@@ -154,7 +156,7 @@ img {
 }
 
 
-.nums:hover{
+.keys:hover{
     
     background-color: gray;
     color:black;

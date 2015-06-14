@@ -11,14 +11,14 @@ var backbone = require("backbone")
 
 var $ = require("jquery")
 
-import * as templates from "./templates.js"
+import * as templates from "./tags.js"
 
 
 var CalculatorView = backbone.View.extend({
     
     el: '.container',
     events: {
-        'click .nums': 'append_to_console',
+        'click .keys': 'append_to_console',
         'click .clear': 'clear_screen',
         'click .evaluate': 'evaluate_input'
     },
