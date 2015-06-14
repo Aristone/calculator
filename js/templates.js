@@ -1,11 +1,11 @@
 export var calcHTML = `
-    	<div class="display">
+    	
     		<div class="clear"><span>C</span></div>
     		<div class="console"><span></span></div>
     	
     	<div class="keys">
     		
-            <h1></h1>
+            
     		<div class="numbers">
     			
 		    		<span class="nums">7</span>
@@ -25,5 +25,5 @@ export var calcHTML = `
 		    		<span class="evaluate">=</span> 
 		    		<span class="nums">+</span>
 	    	</div>
-    	</div>
+    	
     	</div>`

@@ -96,20 +96,14 @@ img {
     background-color:Aquamarine;
     
  }
-.display{
-    display:block;
-    width: 500px;
-    height: 100px;
-}
+
 
 .clear{
-
-    border: solid green 1px;
-    max-width: 23%;
     display:flex;
-    /*flex: 1;*/
-    float: left;
-    padding: 10% 10% 10% 10%;
+    justify-content:flex-start;
+    width:34px;
+    border: solid green 1px;
+    padding: 10% 10% 5% 5%;
      color:green;
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
@@ -117,11 +111,11 @@ img {
 }
 
 .console{
-    max-width: 70%;
-    float: left;
-    border: solid green 1px;
     display:flex;
-    /*flex: 2;*/
+    justify-content:flex-end;
+    border: solid green 1px;
+    top:0;
+    right:0;
     padding: 10% 10% 10% 10%;
      color:green;
     font-size: 2em;
@@ -140,21 +134,22 @@ img {
     border: solid green .1px;
     flex-direction: row;
     flex-basis:auto;
+    float:left;
 
 }
 
 .nums{
-    
+    max-width: 23%;
     border: solid green 1px;
     margin: 1% 1% 1% 1%;
-    padding: 6% 10% 6% 6%;
+    padding: 6% 12% 6% 8%;
 }
 
 .evaluate{
     
     border: solid green 1px;
     margin: 1% 1% 1% 1%;
-    padding: 6% 10% 6% 6%;
+    padding: 6% 12% 6% 8%;
 
 }
 
