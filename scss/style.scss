@@ -93,19 +93,19 @@ img {
     display: flex-box;
     max-width:500px;
     height: 600px;
-    border: solid green 1px;
-    background-color:Aquamarine;
+    border: solid rgb(235,246,233) 1px;
+    background-color:rgb(86, 168, 69);
     
  }
 
 
 .clear{
     display:flex;
-    justify-content:flex-start;
-    width:34px;
-    border: solid green 1px;
-    padding: 5% 5% 5% 5%;
-     color:green;
+    align-items: baseline;
+    width:50px;
+    border: solid rgb(124,189,111) 1px;
+    padding: 5% 12% 5% 8%;
+     color:rgb(235,246,233);
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
 
@@ -113,13 +113,12 @@ img {
 
 .console{
     display:flex;
-    justify-content:flex-end;
-    border: solid green 1px;
-    top:0;
-    right:0;
-    margin:20px 20px 20px 20px;
+    align-items: baseline;
+    border: solid rgb(124,189,111) 1px;
+   height: 100px;
+    margin:0px 0px 0px 103px;
     padding: 5% 5% 5% 5%;
-     color:green;
+     color:rgb(235,246,233);
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
 }
@@ -127,13 +126,13 @@ img {
 
 
 .numbers{
-    color:green;
+    color:rgb(235,246,233);
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
     max-width:500px;
     display:flex;
     flex-wrap: wrap;
-    border: solid green .1px;
+    border: solid rgb(124,189,111) .1px;
     flex-direction: row;
     flex-basis:auto;
     float:left;
@@ -141,28 +140,83 @@ img {
 }
 
 .keys{
-    max-width: 23%;
-    border: solid green 1px;
-    margin: 1% 1% 1% 1%;
+    /*max-width: 23%;*/
+    border: solid rgb(124,189,111) 1px;
+    /*margin: 1% 1% 1% 1%;*/
     padding: 6% 12% 6% 8%;
 }
 
 .evaluate{
     
-    border: solid green 1px;
-    margin: 1% 1% 1% 1%;
+    border: solid rgb(124,189,111) 1px;
+   /* margin: 1% 1% 1% 1%;*/
     padding: 6% 12% 6% 8%;
 
 }
 
 
-.keys:hover{
+
+.keys:nth-child(4){
     
-    background-color: gray;
-    color:black;
+    background-color:rgb(114,183,101) ;
+    color:rgb(58,92,49);
+
+}
+.keys:nth-child(8){
+    
+    background-color:rgb(114,183,101) ;
+    color:rgb(58,92,49);
+
+}
+.keys:nth-child(12){
+    
+    background-color:rgb(114,183,101) ;
+    color:rgb(58,92,49);
+
+}
+.keys:nth-child(16){
+    
+    background-color:rgb(114,183,101) ;
+    color:rgb(58,92,49);
+
+}
+.evaluate:hover{
+    
+    background-color: rgb(114,183,101) ;
+    
+
+}
+.clear:hover{
+    
+    background-color: rgb(114,183,101);
+    
 
 }
 
+.keys:nth-child(4):hover{
+    
+    
+    color:rgb(235,246,233);
+
+}
+.keys:nth-child(8):hover{
+    
+    
+    color:rgb(235,246,233);
+
+}
+.keys:nth-child(12):hover{
+    
+    
+    color:rgb(235,246,233);
+
+}
+.keys:nth-child(16):hover{
+    
+    
+    color:rgb(235,246,233);
+
+}
 
 
 
