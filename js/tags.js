@@ -1,7 +1,7 @@
 export var calcHTML = `
     	
-    		<div class="clear"><span>C</span></div>
-    		<div class="console"><span></span></div>
+    	<div class="clear"><span>C</span></div>
+    	<div class="console"><span></span></div>
     	
     	<div class="pad">
     		
